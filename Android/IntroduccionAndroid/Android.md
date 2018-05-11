@@ -6,7 +6,7 @@ Manual Introductorio Android
 
 
 
-###Historia de Android:
+### Historia de Android:
 
 <center>![AndyRubin](rubin.png) </center>
 El origen de Android se remonta a una persona en particular, se trata de Andy Rubin, un licenciado en ciencias de la compu-
