@@ -26,7 +26,7 @@ Dicho lo anterior, una **activity (o actividad)**  *es un componente de una apli
 
 El ciclo de vida de una actividad de se refiere al estado en que esta se encuentra, es análogo al ciclo de vida de un ser vivo o al ciclo de vida del agua, etc. Para el caso particular de Android OS, el ciclo de vida de una actividad *nos permitirá declarar como se va a comportar una actividad cuando el usuario la abandona o cuando vuelve entrar a ella.*
 
-El siguiente diagrama fue tomado directamente del sitio www.developer.android.com (allí se encuentra la documentación oficial de como desarrollar para android.) y muestra todos los métodos o estados en las que una actividad puede caer.
+El siguiente diagrama fue tomado directamente del sitio https://developer.android.com (allí se encuentra la documentación oficial de como desarrollar para android.) y muestra todos los métodos o estados en las que una actividad puede caer.
 
 </p>
 
@@ -36,7 +36,51 @@ El siguiente diagrama fue tomado directamente del sitio www.developer.android.co
 
 </p>
 
-## Creación de una acitivity
+<p align="justify">
+
+Las actividades en android son controladas por el sistema operativo a través de la llamada *pila de de actividades (activity stack)*. Es decir, por medio de una estructura de datos y lógica de programación es como nuestras actividades pueden ser o no visibles para el usuario. Si el lector requiere de una explicación más profunda acerca del control de las actividades a nivel sistema operativo, primero será necesario que revise de manera detallada el tema de estructura de datos y su implementación en cualquier lenguaje de programación.
+
+Una actividad puede estar en uno de los siguientes cuatro estados:
+
+* **Activa (Active or Running).** Es cuando una actividad se encuentra en primer plano de la pantalla.
+
+* **Pausada (Paused).** Algunas veces se traduce como visible. Una actividad se encuentra pausada si aun esta viva y visible pero no esta enfocada. Mantiene su estado y su información.
+
+  <u>Ejemplo.</u> Cuando se estamos en cualquier aplicación de nuestro telefono y no sale una alerta de 		batería baja, la actividad se alcanza a ver pero no esta enfocada.
+
+* **Parada (Stopped).**  Sucede cuando una segunda actividad B se pone completamente sobre una primera actividad A. Es decir, la actividad A queda en segundo plano, sin embargo su estado e información aun son retenidos por la misma. Se debe tener en cuenta que en este estado la actividad puede ser destruidad (killed) por el sistema si se llegará a necesidad memoria en otra parte.
+
+* **Destroyed (destruida).** Si una actividad es puesta en *paused* o en *stopped*, el sistema puede eliminar la actividad de la memoria pidiéndole que termine o simplemente eliminando el proceso. Cuando se vuelve a mostrar al usuario, debe reiniciarse completamente y restaurarse a su estado anterior.
+
+###### IMPORTARTE
+
+==Si tras eliminar el proceso de una aplicación, el usuario vuelve a ella, se crea de nuevo el proceso, pero se habrá perdido el estado que tenía esa aplicación. En estos casos, será responsabilidad del programador almacenar el estado de las actividades, si queremos que cuando sean reiniciadas conserven su estado.==
+
+Las actividades estarán controladas por la clase *Activity* y presenta los siguientes métodos.
+
+```java
+ public class Activity extends ApplicationContext {
+     protected void onCreate(Bundle savedInstanceState);
+
+     protected void onStart();
+
+     protected void onRestart();
+
+     protected void onResume();
+
+     protected void onPause();
+
+     protected void onStop();
+
+     protected void onDestroy();
+ } 
+```
+
+Observe que hay métodos que se dan en pares, por decirlo de alguna forma.
+
+</p>
+
+## Creación de una activity
 
 ## Añadir una activity a la aplicación
 
