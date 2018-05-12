@@ -1,8 +1,6 @@
 # Activities
 
-[TOC]
-
-##Conocimientos Previos
+## Conocimientos Previos
 
 * Java básico
 * Contenido del archivo AndroidManifest.xml
