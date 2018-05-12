@@ -1,5 +1,9 @@
 # Activities
 
+[TOC]
+
+
+
 ## ¿Qué es un activity?
 
 <p align="justify">
@@ -54,7 +58,7 @@ Una actividad puede estar en uno de los siguientes cuatro estados:
 
 ###### IMPORTARTE
 
-==Si tras eliminar el proceso de una aplicación, el usuario vuelve a ella, se crea de nuevo el proceso, pero se habrá perdido el estado que tenía esa aplicación. En estos casos, será responsabilidad del programador almacenar el estado de las actividades, si queremos que cuando sean reiniciadas conserven su estado.==
+> Si tras eliminar el proceso de una aplicación, el usuario vuelve a ella, se crea de nuevo el proceso, pero se habrá perdido el estado que tenía esa aplicación. En estos casos, será responsabilidad del programador almacenar el estado de las actividades, si queremos que cuando sean reiniciadas conserven su estado.
 
 Las actividades estarán controladas por la clase *Activity* y presenta los siguientes métodos.
 
@@ -76,11 +80,51 @@ Las actividades estarán controladas por la clase *Activity* y presenta los sigu
  } 
 ```
 
-Observe que hay métodos que se dan en pares, por decirlo de alguna forma.
+Observe que hay métodos que se dan en pares, por decirlo de alguna forma, ya que el método onPause() se anula con el método onResume(), el método onStop() se anula con el método onRestart() y por último, onDestroy() no podría existir sin onCreate(...).
+
+La siguiente tabla fue tomada de Android Developers y muestra lo que hace cada método de la clase Activity
+
+<p align="center">
+
+<img src="./img/act_methods.jpg">
+
+</p>
 
 </p>
 
 ## Creación de una activity
+
+<p align="justify">
+
+Al iniciar un proyecto en **Android Studio**, por defecto se nos crea una actividad, que de hecho es llamada actividad principal, ya que es la primera pantalla que el usuario verá al iniciar nuestra aplicación.
+
+Así mismo, observamos que existe un archivo llamado _activity_main.xml_ y otro llamado _MainActivity.java_, que se encuentran en la carpeta de _res/layout_ y _java_, respectivamente. Esto sucede porque se esta usando la arquitectura modelo-vista-controlador que se explico al principio de este documento.
+
+La vista corresponde al archivo xml y el controlador al archivo con extensión .java 
+
+##### Entonces, ¿Cómo creamos una nueva actividad?
+
+Android Studio ofrece un asistente que nos guiará para tener una nueva actividad, los pasos que debemos seguir son los siguientes.
+
+1. En la estructura del proyecto damos click secundario en la carpeta *layout* contenida en la siguiente ruta app/res/layout
+
+   Después de dar click segundario, escogemos las siguientes opciones:
+
+   * New
+     * Activity
+       * Blank Activity
+
+   <img src="./img/act_new1.jpg">
+
+2. Aparecerá el asistente para crear una nueva actividad, nos pedirá el nombre la actividad.
+
+   <img src="./img/act_new2.jpg">
+
+Finalmente, estamos listos para crear una nueva vista de nuestra aplicación.
+
+<img src="./img/act_new3.jpg">
+
+</p>
 
 ## Añadir una activity a la aplicación
 
