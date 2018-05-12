@@ -40,6 +40,8 @@ Existen dos tipos de *intents*, que son em explícito y el implícito, a continu
 
 ## Intent explícito
 
+Un intent explícito sucede cuando
+
 ##Intent implícito
 
 ## Temas siguientes
