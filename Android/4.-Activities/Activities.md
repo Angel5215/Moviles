@@ -4,7 +4,7 @@
 
 El sistema operativo Android utiliza el patrón de diseño *modelo - vista - controlador*  que en pocas palabras se refiere a dividir nuestra aplicación en tres elementos básicos.
 
-![mvc](/run/media/rho/DATA/Proteco/Sección_Moviles2018-2/MovilesGitHub/Android/4.-Activities/img/mvc.png)
+![mvc](./img/mvc.png)
 
 1. Vista : Se encarga de la representación visual de los datos, todo lo que tenga que ver con la interfaz gráfica va aquí.
 2. Controlador. Se encarga de la funcionalidad y administración de la aplicación, recibe las peticiones del usuario y si es necesario, le solicita datos al modelo y luego se los comunica a la vista.
