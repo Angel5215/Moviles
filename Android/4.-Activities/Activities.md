@@ -1,5 +1,11 @@
 # Activities
 
+## Consideraciones
+
+El presente documento fue realizado con la versión 2.3 de Android Studio sin embargo, se puede utilizar para la versión 3.1 del IDE.
+
+No se requirieron hacer pruebas en algún dispositivo 
+
 ## Conocimientos Previos
 
 * Java básico
