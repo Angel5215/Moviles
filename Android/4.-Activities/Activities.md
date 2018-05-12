@@ -12,6 +12,8 @@ El sistema operativo Android utiliza el patrón de diseño *modelo - vista - con
 
 Dicho lo anterior, una **activity (o actividad)**  *es un componente de una aplicación (para Android OS)  que provee una pantalla con la que los usuarios pueden interacturar* y hacer uso de las funcionalidades que pueda ofrecer nuestra aplicación como por ejemplo, tomar una foto, enviar un email, ver un mapa, etc.
 
+<img align= "center" src="./img/mvc.png">
+
 ## Ciclo de vida de una activity
 
 ## Creación de una acitivity
