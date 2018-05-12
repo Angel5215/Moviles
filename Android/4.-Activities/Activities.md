@@ -18,11 +18,23 @@ El sistema operativo Android utiliza el patrón de diseño *modelo - vista - con
 
 Dicho lo anterior, una **activity (o actividad)**  *es un componente de una aplicación (para Android OS)  que provee una pantalla con la que los usuarios pueden interacturar* y hacer uso de las funcionalidades que pueda ofrecer nuestra aplicación como por ejemplo, tomar una foto, enviar un email, ver un mapa, etc.
 
-
-
 </p>
 
 ## Ciclo de vida de una activity
+
+<p align="justify">
+
+El ciclo de vida de una actividad de se refiere al estado en que esta se encuentra, es análogo al ciclo de vida de un ser vivo o al ciclo de vida del agua, etc. Para el caso particular de Android OS, el ciclo de vida de una actividad *nos permitirá declarar como se va a comportar una actividad cuando el usuario la abandona o cuando vuelve entrar a ella.*
+
+El siguiente diagrama fue tomado directamente del sitio www.developer.android.com (allí se encuentra la documentación oficial de como desarrollar para android.) y muestra todos los métodos o estados en las que una actividad puede caer.
+
+</p>
+
+<p align="center">
+
+<img src="./img/activity_lifecycle.png">
+
+</p>
 
 ## Creación de una acitivity
 
