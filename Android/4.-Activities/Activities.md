@@ -2,7 +2,11 @@
 
 [TOC]
 
+##Conocimientos Previos
 
+* Java básico
+* Contenido del archivo AndroidManifest.xml
+* Noción de las herramientas del IDE Android Studio
 
 ## ¿Qué es un activity?
 
@@ -122,9 +126,45 @@ Android Studio ofrece un asistente que nos guiará para tener una nueva activida
 
 Finalmente, estamos listos para crear una nueva vista de nuestra aplicación.
 
-​	<img src="./img/act_new3.jpg">
+​		<img src="./img/act_new3.jpg">
 
 </p>
 
 ## Añadir una activity a la aplicación
+
+Al crear una actividad via asistente, por defecto hace un paso muy importante el cual es incluir nuestra actividad en el archivo *AndroidManifest.xml*, es conveniente revisar que este paso se halla llevado a cabo, simplemente debe abrir dicho archivo y revisar que se parezca al siguiente snippet.
+
+Hay varias formas de agregar la actividad al *AndroidManifest.xml*, a continuación se describen algunas.
+
+```xml
+ <!-- Main Activity-->
+    <activity android:name=".YourActivityName" >
+        <intent-filter>
+      <!-- MAIN represents that it is the Main Activity-->
+            <action android:name="android.intent.action.MAIN" />
+      <!-- Launcher Denotes that it will be the first launching activity-->
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+ <!--Add Other activities like this-->
+    <activity android:name=".YourActivityName2" >
+ <!--Default Intent Filter-->
+        <intent-filter>
+            <action android:name="android.intent.action.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+ <!--OR Other activities like this And  intent filter is not necessary in other activites-->
+    <activity android:name=".YourActivityName3" >
+    </activity>
+
+ <!--OR Add Other activities like this-->
+    <activity android:name=".YourActivityName4" />
+```
+
+## Temas siguientes
+
+* Intents
+* Fragments
 
