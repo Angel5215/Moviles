@@ -122,7 +122,7 @@ Android Studio ofrece un asistente que nos guiará para tener una nueva activida
 
 Finalmente, estamos listos para crear una nueva vista de nuestra aplicación.
 
-<img src="./img/act_new3.jpg">
+​	<img src="./img/act_new3.jpg">
 
 </p>
 
