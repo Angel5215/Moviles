@@ -1,8 +1,8 @@
 # Intents
 
-##Consideraciones
+## Consideraciones
 
-##Conocimientos Previos
+## Conocimientos Previos
 
 * Versiones de API
 * Activities
@@ -14,7 +14,7 @@ Un intent es una descripción abstracta de una operación a realizar. En otras p
 
 ###### Los intent puden ser usados para :
 
-1. Iniciarotra actividad
+1. Iniciar otra actividad
 2. Iniciar un servicio
 3. Entregar un broadcast (mensaje)
 
@@ -32,7 +32,7 @@ Se hace los mismo que para activity, el Intent describe que el serivicio debe in
 
 > Es importante revisar la versión de API con la que se este trabajando ya que a partir de Android 5.0, para iniciar un servicio se usan los métodos de la clase  JobScheduler en lugar de startService()
 
-#####Entregar un broadcast
+#####Transmitir un broadcast
 
 Puede transmitir un broadcast (mensaje) a otras aplicaciones pasando un Intent con los siguientes métodos, `sendBroadcast ()` o `sendOrderedBroadcast ()`.
 
@@ -40,11 +40,23 @@ Existen dos tipos de *intents*, que son em explícito y el implícito, a continu
 
 ## Intent explícito
 
-Un intent explícito sucede cuando
+Un intent explícito sucede cuando el programador específica la aplicación que va a satisface el *intent*, esto sucede comunmente cuando se quiere iniciar un componente de nuestra aplicación.
 
-##Intent implícito
+## Intent implícito
 
-## Temas siguientes
+Un *intent* sucede cuando no se específica el nombre del componenete a iniciar, pero en lugar de ello se declara la acción general a ser ejecutada. 
+
+Por ejemplo. Cuando queremos mostrar la ubicación del usuario se usa un intent implícito para solicitar que otra aplicación  capaz de mostrar mapas sea abierta.
+
+<p align="center">
+
+<img src="./img/intent-implicitos.png" width="550">
+
+</p>
+
+
+
+##Temas siguientes
 
 * Alerts
 * Fragments
