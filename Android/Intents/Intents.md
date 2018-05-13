@@ -1,10 +1,13 @@
 # Intents
 
+[TOC]
+
 ## Consideraciones
 
 ## Conocimientos Previos
 
 * Versiones de API
+* Elementos de GUI (vistas y contenedores)
 * Activities
 * Noción o definición de servicio
 
@@ -41,6 +44,12 @@ Existen dos tipos de *intents*, que son em explícito y el implícito, a continu
 ## Intent explícito
 
 Un intent explícito sucede cuando el programador específica la aplicación que va a satisface el *intent*, esto sucede comunmente cuando se quiere iniciar un componente de nuestra aplicación.
+
+<p align="center">
+
+<img src="./img/intent-explicito.jpg">
+
+</p>
 
 ## Intent implícito
 
