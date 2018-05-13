@@ -1,3 +1,8 @@
 
 # Archivos DS_Store
 .DS_Store
+
+# Archivos generados tmp generados por TOC plugin 
+*.orig.*
+*.toc.*
+

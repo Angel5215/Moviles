@@ -1,6 +1,22 @@
 # Intents
 
-[TOC]
+<!--ts-->
+   * [Intents](#intents)
+      * [Consideraciones](#consideraciones)
+      * [Conocimientos Previos](#conocimientos-previos)
+      * [¿Qué es un intent?](#qué-es-un-intent)
+                  * [Los intent puden ser usados para :](#los-intent-puden-ser-usados-para-)
+               * [Iniciar una nueva actividad](#iniciar-una-nueva-actividad)
+               * [Iniciar un servicio](#iniciar-un-servicio)
+                  * [IMPORTANTE](#importante)
+               * [Transmitir un broadcast](#transmitir-un-broadcast)
+      * [Intent explícito](#intent-explícito)
+      * [Intent implícito](#intent-implícito)
+      * [Temas siguientes](#temas-siguientes)
+
+<!-- Added by: rho, at: 2018-05-12T21:22-05:00 -->
+
+<!--te-->
 
 ## Consideraciones
 
