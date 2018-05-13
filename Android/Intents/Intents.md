@@ -8,7 +8,7 @@
 * Activities
 * Noción o definición de servicio
 
-##¿Qué es un intent?
+## ¿Qué es un intent?
 
 Un intent es una descripción abstracta de una operación a realizar. En otras palabras, es un objeto de mensajería que puede ser usada para solicitar una acción de otro componete de la aplicación.
 
@@ -32,7 +32,7 @@ Se hace los mismo que para activity, el Intent describe que el serivicio debe in
 
 > Es importante revisar la versión de API con la que se este trabajando ya que a partir de Android 5.0, para iniciar un servicio se usan los métodos de la clase  JobScheduler en lugar de startService()
 
-#####Transmitir un broadcast
+##### Transmitir un broadcast
 
 Puede transmitir un broadcast (mensaje) a otras aplicaciones pasando un Intent con los siguientes métodos, `sendBroadcast ()` o `sendOrderedBroadcast ()`.
 
@@ -54,9 +54,7 @@ Por ejemplo. Cuando queremos mostrar la ubicación del usuario se usa un intent 
 
 </p>
 
-
-
-##Temas siguientes
+## Temas siguientes
 
 * Alerts
 * Fragments
