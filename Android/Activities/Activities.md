@@ -1,5 +1,21 @@
 # Activities
 
+<!--ts-->
+   * [Activities](#activities)
+      * [Consideraciones](#consideraciones)
+      * [Conocimientos Previos](#conocimientos-previos)
+      * [¿Qué es un activity?](#qué-es-un-activity)
+      * [Ciclo de vida de una activity](#ciclo-de-vida-de-una-activity)
+                  * [IMPORTARTE](#importarte)
+      * [Creación de una activity](#creación-de-una-activity)
+               * [Entonces, ¿Cómo creamos una nueva actividad?](#entonces-cómo-creamos-una-nueva-actividad)
+      * [Añadir una activity a la aplicación](#añadir-una-activity-a-la-aplicación)
+      * [Temas siguientes](#temas-siguientes)
+
+<!-- Added by: rho, at: 2018-05-12T21:36-05:00 -->
+
+<!--te-->
+
 ## Consideraciones
 
 El presente documento fue realizado con la versión 2.3 de Android Studio sin embargo, se puede utilizar para la versión 3.1 del IDE.
