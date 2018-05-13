@@ -12,9 +12,12 @@
                * [Transmitir un broadcast](#transmitir-un-broadcast)
       * [Intent explícito](#intent-explícito)
       * [Intent implícito](#intent-implícito)
+      * [Construyendo un intent (Sección de código)](#construyendo-un-intent-sección-de-código)
+         * [Snippet de <em>intent</em> explícito](#snippet-de-intent-explícito)
+         * [Snippet de <em>intent</em> explícito](#snippet-de-intent-explícito-1)
       * [Temas siguientes](#temas-siguientes)
 
-<!-- Added by: rho, at: 2018-05-12T21:22-05:00 -->
+<!-- Added by: rho, at: 2018-05-12T23:22-05:00 -->
 
 <!--te-->
 
@@ -78,6 +81,43 @@ Por ejemplo. Cuando queremos mostrar la ubicación del usuario se usa un intent 
 <img src="./img/intent-implicitos.png" width="550">
 
 </p>
+
+
+
+## Construyendo un intent (Sección de código)
+
+### Constructores de la clase intent
+
+<p align="center">
+
+<img src="./img/constructores.png">
+
+Los constructores *3* y *4*  son para intents implícitos ya que no se específica el componente al que se quiere llamar.
+
+Los constructores *5*y *6*  son para intents explícitos ya que se específica el componente al que se quiere llamar.
+
+</p>
+
+### Snippet de *intent* explícito
+
+La siguiente porción de código deberá estar en el código de algún objeto que contenga un listener, por ejemplo, es común el caso en donde se tiene un botón y este tiene un método llamado `onclick()` , éste método se encarga de realizar ciertas acciones cuando el usuario presiona el botón, en éste caso la acción que queremos realizar es la de crear un *intent* como se sigue:
+
+```java
+// Explicit Intent by specifying its class name
+Intent i = new Intent(FirstActivity.this, SecondActivity.class);
+
+// Starts TargetActivity
+startActivity(i);
+```
+
+### Snippet de *intent* explícito
+
+```java
+Intent read1=new Intent();
+read1.setAction(android.content.Intent.ACTION_VIEW);
+read1.setData(ContactsContract.Contacts.CONTENT_URI);
+startActivity(read1);
+```
 
 ## Temas siguientes
 
