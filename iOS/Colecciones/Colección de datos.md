@@ -12,7 +12,7 @@ Las colecciones son de gran utilidad cuando se desea almacenar un arreglo de val
 
 Entonces podemos decir que, las colecciones de datos en **Swift** nos permiten agrupar  datos u objetos de una manera particular, ya sea como una lista de elementos únicos o repetidos, o sencillamente una lista de conjuntos
 
-![Colecciones de datos en Swift](colecciones.jpg)
+![Colecciones de datos en Swift](colecciones.png)
 
 ##Arrays (Arreglos)
 
@@ -38,7 +38,7 @@ print("miArreglo es de tipo [Int] y cuenta con \(miArreglo.count) elementos.")
 
 ```
 Y obtendremos la siguiente salida:
-![Colecciones de datos en Swift](ejemplo1.jpg)
+![Colecciones de datos en Swift](ejemplo1.png)
 
 También podríamos declar a nuestro arreglo vacío de las siguientes formas:
 
@@ -61,7 +61,7 @@ print("el arreglo es de tipo [Double] y sus valores son: \(tresDoubles)")
 
 ```
 Y obetenemos la salida siguiente: 
-![Colecciones de datos en Swift](ejemplo2.jpg)
+![Colecciones de datos en Swift](ejemplo2.png)
 
 También **Swift** infiere el tipo de dato que estamos manejando sin necesidad de hacer ninguna referencia 
 
