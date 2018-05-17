@@ -178,3 +178,129 @@ print("El género \(eliminarIngrediente) ha sido eliminado.")
 Y la salida en pantalla seria la siguiente:
 
 ![Colecciones de datos en Swift](ejemplo7.png)
+
+Si quisieramos elimianr todos los elementos de nuestro conjutno solo hae falta hacer uso del método .removeAll como se muestra a continuación:
+
+```swift    
+
+ ingredientes.removeAll()
+```
+
+## Uniones 
+
+Al hablar de conjuntos se debe intuir que tambien existen operaciones que se pueden realizar con cada uno de ellos y las uniones es una de esas operaciones que **Swift** nos permite realizar con los conjuntos. En el siguiente ejemplo se demostrará cómo se pueden realizar uniones entre conjuntos.
+
+En una clase se hicieron dos equipos, cada uno de ellos debía traer diferentes materiales para realizar en conjunto un mismo trabajo en el salón.
+Equipo A:
+- Pegamento
+- Tijeras
+- Plumones
+
+Equipo B:
+- Cartulina
+- Cutter
+- Regla
+
+Se necesita comprobar que cada uno de los equipos haya trído los materiales que les correspondía y además crear una lista de todos los materiales disponibles.
+
+Como podemos leer en el enunciado anterior este ejercicio puede resolverse facilmente haciendo uso de los conjuntos de la siguiente forma:
+
+```swift    
+
+ var  equipoA: Set = ["Tijeras", "Plumones"]
+var  equipoB: Set = ["Cartulina", "Cutter", "Regla"]
+var flag = 0
+for material in equipoA {
+    
+    print(material)
+    
+}
+
+print("\n¿El equipo A tiene todos los materiales?\n")
+
+if equipoA.contains("Pegamento")  {
+    flag = flag + 1
+    
+} else {
+    
+    print("El equipo A no tiene pegamento")
+}
+
+if equipoA.contains("Tijeras")  {
+    flag = flag + 1
+    
+}
+else  {
+    
+     print("El equipo A no tiene Tijeras")
+    
+}
+
+if equipoA.contains("Plumones")  {
+    flag = flag + 1
+    
+}
+else  {
+    
+    print("El equipo A no tiene Plumones")
+    
+}
+
+if flag == 3 {
+    print("Equipo A tiene todos sus materiales")
+}
+
+flag = 0
+
+print("\n¿El equipo B tiene todos los materiales?\n")
+
+if equipoB.contains("Cartulina")  {
+    flag = flag + 1
+    
+} else {
+    
+    print("El equipo B no tiene pegamento")
+}
+
+if equipoB.contains("Cutter")  {
+    flag = flag + 1
+    
+}
+else  {
+    
+    print("El equipo B no tiene Regla")
+    
+}
+
+if equipoB.contains("Regla")  {
+    flag = flag + 1
+    
+}
+else  {
+    
+    print("El equipo B no tiene Regla")
+    
+}
+
+if flag == 3 {
+    print("Equipo B tiene todos sus materiales")
+}
+```
+
+Hasta esta parte hemos creado nuestros dos conjuntos, Equipo A y Equipo B, cada uno con sus respectivos matariales y se comprueba que cada uno de estos cuente con los elementos o materiales que se pidió en el ejercicio, es por esta razón que en el equipo A no se agregó el pegamento.
+
+Lo último que nos falta hacer es crear nuestra lista de todos los materiales con los que se cuenta, por lo que se hará una unión entre los dos conjuntos de la siguiente forma:
+
+```swift    
+
+for lista in listaMateriales {
+    
+    print("La lista de los materiales disponibles de todo el grupo es la siquiente: \n \(lista)")
+    
+}```
+
+Y la salida de nuestra pantalla debería ser la siguiente:
+
+![Colecciones de datos en Swift](ejemplo8.png)
+
+De esta forma queda resuelto el ejercicio y se comprende el uso de la union entre conjuntos.
