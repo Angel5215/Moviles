@@ -12,9 +12,9 @@ Las colecciones son de gran utilidad cuando se desea almacenar un arreglo de val
 
 Entonces podemos decir que, las colecciones de datos en **Swift** nos permiten agrupar  datos u objetos de una manera particular, ya sea como una lista de elementos únicos o repetidos, o sencillamente una lista de conjuntos
 
-![Colecciones de datos en Swift](coleccionesswift.png)
+![Colecciones de datos en Swift](colecciones.jpg)
 
-## Arrays (Arreglos)
+##Arreglos (Arrays)
 
 En **Swift** también podemos hacer uso de los areglos y podemos definirlos como un un conjunto de datos de un mismo tipo ordenados de forma lineal. 
 Los componentes de un array se han de referenciar por medio del nombre del array y un índice de desplazamiento para indicar el componente deseado.
@@ -38,9 +38,7 @@ print("miArreglo es de tipo [Int] y cuenta con \(miArreglo.count) elementos.")
 
 ```
 Y obtendremos la siguiente salida:
-
-
-![Colecciones de datos en Swift](ejemplo1.png)
+![Colecciones de datos en Swift](ejemplo1.jpg)
 
 También podríamos declar a nuestro arreglo vacío de las siguientes formas:
 
@@ -63,9 +61,7 @@ print("el arreglo es de tipo [Double] y sus valores son: \(tresDoubles)")
 
 ```
 Y obetenemos la salida siguiente: 
-
-
-![Colecciones de datos en Swift](ejemplo2.png)
+![Colecciones de datos en Swift](ejemplo2.jpg)
 
 También **Swift** infiere el tipo de dato que estamos manejando sin necesidad de hacer ninguna referencia 
 
@@ -97,4 +93,63 @@ for _ in nombresLista {
 ```
 y nuestra salida en pantalla:
 
+![Colecciones de datos en Swift](ejemplo3.jpg)
+
+Ahora vamos a eliminar 2 de los 3 elementos argregados de la siguiente forma
+```swift    
+var lista: Array<String>
+  
+nombresLista.remove(at: 1)
+nombresLista.remove(at: 2)
+
+```
+
+Y la salida en nuestra consola cuando mandamos a imprimir será la siguiente:
+
+![Colecciones de datos en Swift](ejemplo4.jpg)
+
+En nuestros ejemplos anteriores hemos logrado trabajar con los arreglos, así como agregar y eliminar datos del mismo, que son los métodos mas usados en **Swift** 
+
+## Conjuntos (Set)
+
+Un conjunto o set nos permite almacenar diferentes valores de un mismo tipo sin ningún tipo de orden definido, cada uno de estos elementos es irrepetible en el conjunto, es decir, no puede aparecer mas de una vez.
+Los conjuntos son usados en vez de un arreglo cuando el orden de nuestros elementos no es importante y además se quiere que cada uno de estos sea único dentro de nuestro conjunto, es decir, que no queramos que se repita.
+
+## Creado e inicializando un conjunto
+
+A continución vamos a crear un conjunto vacío y vamos a imprimir el número de elementos con el que cuenta
+
+```swift    
+var conjunto = Set<String>()
+ 
+print("El conjunto cuenta con \(conjunto.count) elementos.")
+
+```
+
+Y el resultado en pantalla sería:
+
+![Colecciones de datos en Swift](ejemplo5.jpg)
+
+
+## Creando un conjunto a partir de una arreglo
+
+**Swift** nos permite crear un conjunto de una manera muy fácil así como lo es crear un arreglo. Solo es necesario declar un arreglo con elementos, especificando que será del tipo Set. En el siguiente ejemplo vemo la forma correcta de declarar nuestro conjunto:
+
+```swift    
+let ingredientes: Set = ["ajo", "queso", "jitomate", "sal"]
+
+```
+
+En la variable "ingredientes" estamos almecenando los elementos necesarios para una receta de cocina, en este caso se usa un conjunto pues en una lista de ingredientes no es posible que exista alguno repetido y si recordamos anteriormente se mencionó que en un conjunto solo existirán elementos que no podrán repetirse. 
+
+Ahora vamos a interactuar con nuestro conjunto:
+
+```swift    
+let ingredientes: Set = ["ajo", "queso", "jitomate", "sal"]
+if ingredientes.contains("queso") {
+    print("No me gusta el queso.")
+}
+```
+
+![Colecciones de datos en Swift](ejemplo6.jpg)
 
