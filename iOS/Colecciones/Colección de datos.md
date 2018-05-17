@@ -12,7 +12,7 @@ Las colecciones son de gran utilidad cuando se desea almacenar un arreglo de val
 
 Entonces podemos decir que, las colecciones de datos en **Swift** nos permiten agrupar  datos u objetos de una manera particular, ya sea como una lista de elementos únicos o repetidos, o sencillamente una lista de conjuntos
 
-![Colecciones de datos en Swift](colecciones.jpg)
+![Colecciones de datos en Swift](colecciones.png)
 
 ##Arreglos (Arrays)
 
@@ -28,7 +28,7 @@ let nombres: [String] = ["Jordy", "Luis", "Alejandro"]
 ```
 Podemos notar que en ambos casos estamos declarando un Array de cadenas, "país" y "nombres" representan una constante por la cual es nombrada cada uno de nuestros arreglos
 
-##Creación de un Array vacío
+## Creación de un Array vacío
 **Swift** nos permite crear arreglos vacíos de un tipo de dato en específico haciendo uso de la siguiente sintaxys
 
 ```swift
@@ -38,7 +38,7 @@ print("miArreglo es de tipo [Int] y cuenta con \(miArreglo.count) elementos.")
 
 ```
 Y obtendremos la siguiente salida:
-![Colecciones de datos en Swift](ejemplo1.jpg)
+![Colecciones de datos en Swift](ejemplo1.png)
 
 También podríamos declar a nuestro arreglo vacío de las siguientes formas:
 
@@ -93,7 +93,7 @@ for _ in nombresLista {
 ```
 y nuestra salida en pantalla:
 
-![Colecciones de datos en Swift](ejemplo3.jpg)
+![Colecciones de datos en Swift](ejemplo3.png)
 
 Ahora vamos a eliminar 2 de los 3 elementos argregados de la siguiente forma
 ```swift    
@@ -106,7 +106,7 @@ nombresLista.remove(at: 2)
 
 Y la salida en nuestra consola cuando mandamos a imprimir será la siguiente:
 
-![Colecciones de datos en Swift](ejemplo4.jpg)
+![Colecciones de datos en Swift](ejemplo4.png)
 
 En nuestros ejemplos anteriores hemos logrado trabajar con los arreglos, así como agregar y eliminar datos del mismo, que son los métodos mas usados en **Swift** 
 
@@ -128,7 +128,7 @@ print("El conjunto cuenta con \(conjunto.count) elementos.")
 
 Y el resultado en pantalla sería:
 
-![Colecciones de datos en Swift](ejemplo5.jpg)
+![Colecciones de datos en Swift](ejemplo5.png)
 
 
 ## Creando un conjunto a partir de una arreglo
@@ -151,5 +151,5 @@ if ingredientes.contains("queso") {
 }
 ```
 
-![Colecciones de datos en Swift](ejemplo6.jpg)
+![Colecciones de datos en Swift](ejemplo6.png)
 
