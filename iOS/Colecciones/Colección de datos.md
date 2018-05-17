@@ -61,6 +61,7 @@ print("el arreglo es de tipo [Double] y sus valores son: \(tresDoubles)")
 
 ```
 Y obetenemos la salida siguiente: 
+
 ![Colecciones de datos en Swift](ejemplo2.png)
 
 También **Swift** infiere el tipo de dato que estamos manejando sin necesidad de hacer ninguna referencia 
@@ -296,11 +297,19 @@ Lo último que nos falta hacer es crear nuestra lista de todos los materiales co
 for lista in listaMateriales {
     
     print("La lista de los materiales disponibles de todo el grupo es la siquiente: \n \(lista)")
-    
-}```
+ }   
+```
 
 Y la salida de nuestra pantalla debería ser la siguiente:
 
 ![Colecciones de datos en Swift](ejemplo8.png)
 
 De esta forma queda resuelto el ejercicio y se comprende el uso de la union entre conjuntos.
+
+## Sustracciones
+
+Al igual que **Swift** permite realizar uniones entre conjuntos, permite realizar sustracciones y para entender cómo es que éstas funcionan nos apoyaremos de nuestro ejemplo anterior.
+
+Como pudimos notar cada equipo debía de traer diferentes materiales para el trabajo que se realizaría en clases, pero de igual forma su profesor trajo algunos materiales de ambas listas por si surgía un inconveniente, es necesario ver que materiales de los que él trajo pueden usar sus alumnos para el trabajo en dado caso que hiciera falta algo.
+
+Para realizar este enunciado es evidente que se requiere el uso de la substracción para saber qué materiales son de utilidad para los equipos
