@@ -10,8 +10,7 @@ Las colecciones son de gran utilidad cuando se desea almacenar un arreglo de val
 * Conjuntos
 * Tuplas
 
-Entonces podemos decir que, las colecciones de datos en **Swift** nos permiten agrupar  datos u objetos de una manera particular, ya sea como una lista de elementos únicos o repetidos, o sencillamente una lista de conjuntos:
-
+Entonces podemos decir que, las colecciones de datos en **Swift** nos permiten agrupar  datos u objetos de una manera particular, ya sea como una lista de elementos únicos o repetidos, o sencillamente una lista de conjuntos
 
 ![Colecciones de datos en Swift](colecciones.png)
 
@@ -39,8 +38,6 @@ print("miArreglo es de tipo [Int] y cuenta con \(miArreglo.count) elementos.")
 
 ```
 Y obtendremos la siguiente salida:
-
-
 ![Colecciones de datos en Swift](ejemplo1.png)
 
 También podríamos declar a nuestro arreglo vacío de las siguientes formas:
@@ -64,8 +61,6 @@ print("el arreglo es de tipo [Double] y sus valores son: \(tresDoubles)")
 
 ```
 Y obetenemos la salida siguiente: 
-
-
 ![Colecciones de datos en Swift](ejemplo2.png)
 
 También **Swift** infiere el tipo de dato que estamos manejando sin necesidad de hacer ninguna referencia 
@@ -150,7 +145,7 @@ En la variable "ingredientes" estamos almecenando los elementos necesarios para 
 Ahora vamos a interactuar con nuestro conjunto:
 
 ```swift    
-let ingredientes: Set = ["ajo", "queso", "jitomate", "sal"]
+var ingredientes: Set = ["ajo", "queso", "jitomate", "sal"]
 if ingredientes.contains("queso") {
     print("No me gusta el queso.")
 }
@@ -158,3 +153,28 @@ if ingredientes.contains("queso") {
 
 ![Colecciones de datos en Swift](ejemplo6.png)
 
+De esta forma queda explicado cómo podemos declarar un conjunto apartir de un array con elementos que no se pueden repetir y además pudimos acceder a los elementos de el conjunto usando el método .count.
+
+## Modificando un conjunto
+
+Como vimo en el ejemplo anterior, se puede accerde a los elementos de nuestro conjunto, pues bien, al igual que en un arreglo también podremos  modificar nuestro conjunto a través de métodos y propiedades.
+Podremos agregar un nuevo elemento a nuestro conjunto haciendo uso del método .insert:
+
+```swift    
+
+ ingredientes.insert("pimienta") 
+```
+
+Ahora que hemos agregado un nuevo elemento a nuestro conjunto, vamos a eliminar el elemento "ajo" de nuestro conjunto haciendo uso del método .remove y vamos a comprobar que haya sido eliminado
+
+```swift    
+if let eliminarIngrediente = ingredientes.remove("ajo") {
+ 
+print("El género \(eliminarIngrediente) ha sido eliminado.")
+ 
+}
+```
+
+Y la salida en pantalla seria la siguiente:
+
+![Colecciones de datos en Swift](ejemplo7.png)
